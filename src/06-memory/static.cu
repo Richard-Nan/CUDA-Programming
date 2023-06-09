@@ -3,6 +3,8 @@
 __device__ int d_x = 1;
 __device__ int d_y[2];
 
+
+// 静态全局变量
 void __global__ my_kernel(void)
 {
     d_y[0] += d_x;
